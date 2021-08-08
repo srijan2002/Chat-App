@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title><%= title%></title>
+        <link rel="stylesheet" href="/Styles.css">
+        <script src="https://cdn.socket.io/3.0.5/socket.io.min.js"></script>
+    </head>
+    <body>
+        <%- include('../public/partials/navbar') %>
+        <div class="chat">
+            <div class="disp" id="disp">
+                <div class = "typing" id="typing"></div>
+            </div>
+            
+            <input type="text" id="message" class = "input" autocomplete="off" >
+        </div>
+
+        <button class = "submit" id = "submit">Send</button>
+        <%- include('../public/partials/footer') %>
+        <script src="/message.js"></script>
+        
+    </body>
+    
+</html>
